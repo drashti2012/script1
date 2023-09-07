@@ -1,0 +1,115 @@
+ans-1
+<?php
+echo "hello,php!";
+?>
+
+ans-2
+<?php
+$a="my name is john";
+$b="i am a PHP developer"; 
+$c=$a." and ".$b;
+echo "$c\n";
+?>
+
+ans-3
+<?php
+$answer=42;
+echo "$answer is the answer to everthing";
+?>
+
+ans-4
+<?php
+$firstname="Drashti";
+$lastname="Mehta";
+
+echo $firstname." ".$lastname;
+?>
+
+ans-5
+<?php
+$num=42;
+$text="hello!";
+echo "the number is:"." $num "." and the text is:"."$text";
+?>
+ 
+ans-6
+$x=24;
+//echo "$x \n";
+
+$x=26;
+echo nl2br("\n\n$x ");
+
+ans-7
+$word1="This";
+$word2="is a";
+$word3="sentence.";
+
+$sentence=$word1." ".$word2." ".$word3;
+
+echo nl2br("\n\n$sentence ");
+
+ans-8
+$name=(string)readline("Your name: ");
+
+echo nl2br("\n$name ");
+
+ans-9
+<?php
+	$str = 'hello';  
+	echo "Your String is:".$str;  
+	echo "<br>";  
+	echo "'strlen()' function:".strlen($str);
+?>
+
+ans-10
+<?php
+	$name='hello,john!';
+	$age=25;
+	echo "$name you are $age years old";
+?>
+
+ans-11
+<?php
+	$num1=42;
+	$str='hello';
+	echo "the value of num1 is $num1 and str is $str";
+?>
+
+ans-12
+<?php
+	echo "<ul>";
+	echo "<li><font color=red>hii</font></li>";
+	echo "<li><font color=blue>hello</font></li>";
+	echo "<li><font color=pink>how are u</font></li>";
+	echo "<ul>";
+?>
+
+ans-13
+<?php
+	echo "<a href=https://www.example.com/>click here</a>";
+?>
+
+ans-14
+<style>
+	#a1
+	{
+		display:flex;
+	}
+	#a2
+	{
+		margin-left:2em;
+		display:flex;
+	}
+	#a3
+	{
+		margin-left:4em;
+		display:flex;
+	}
+</style>
+<?php
+	echo "<ol>
+		<li id=a1>list1</li>
+		<li id=a2>list2</li>
+		<li id=a3>list3</li>
+		</ol>";
+?>
