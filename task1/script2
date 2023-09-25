@@ -1,0 +1,13 @@
+<?php>
+$ name=john
+$ age=21
+
+$ echo $name
+john
+
+$ echo $age
+21
+
+$ echo "My name is $name and I am $age years old"
+My name is john and I am 21 years old
+?>
