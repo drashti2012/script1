@@ -1,0 +1,156 @@
+ans-1
+<?php
+    // pyramid star pattern
+    $size = 4;
+    for($i = 0; $i < $size; $i++) {
+        // print spaces
+        for($j = 0; $j < $size - $i - 1; $j++) {
+            echo "&nbsp;&nbsp;";
+        }
+        // print stars
+        for($k = 0; $k < 2 * $i + 1; $k++) {
+            echo "*";
+        }
+        echo "<br>";
+    }
+?>
+
+ans-2
+<?php
+    // left triangle pattern
+    $size = 4;
+    for($i = 0; $i < $size; $i++) {
+        // print column
+        for($j = 0; $j <= $i; $j++) {
+            echo "*";
+        }
+        echo "<br>";
+    }
+?>
+
+ans-3
+<?php
+    // pyramid star pattern
+    $size = 4;
+    for($i = 0; $i < $size; $i++) {
+        // print spaces
+        for($j = 0; $j < $i; $j++) {
+            echo "&nbsp;&nbsp;";
+        }
+        // print stars
+        for($k = 0; $k < 2 * ($size - $i) - 1; $k++) {
+            echo "*";
+        }
+        echo "<br>";
+    }
+?>
+
+Ans-4
+$key = $count = $count_temp = 0;
+$rows = 4; // add your number of row
+ 
+for($index = 1; $index <= $rows; ++$index)
+{
+for($space=1; $space <= $rows - $index; ++$space)
+{
+echo ("&nbsp;&nbsp;&nbsp;"); //add space
+++$count;
+}
+ 
+while($key != 2 * $index-1)
+{
+if ($count <= $rows-1)
+{
+echo ($index + $key."&nbsp;"); //add space in numbers
+++$count;
+}
+else
+{
+++$count_temp;
+echo ($index + $key-2 * $count_temp."&nbsp;"); //add space in numbers
+}
+++$key;
+}
+$count_temp = $count = $key = 0;
+echo ("<br>"); // brake line
+}
+
+Ans-5
+$key = $count = $count_temp = 0;
+$rows = 5; // add your number of row
+ 
+for($index = 1; $index <= $rows; ++$index)
+{
+for($space=1; $space <= $rows - $index; ++$space)
+{
+echo ("&nbsp;&nbsp;&nbsp;"); //add space
+++$count;
+}
+ 
+while($key != 2 * $index-1)
+{
+if ($count <= $rows-1)
+{
+echo ($index + $key."&nbsp;"); //add space in numbers
+++$count;
+}
+else
+{
+++$count_temp;
+echo ($index + $key-2 * $count_temp."&nbsp;"); //add space in numbers
+}
+++$key;
+}
+$count_temp = $count = $key = 0;
+echo ("<br>"); // brake line
+}
+
+Ans-6
+<?php  
+for($i=0;$i<=5;$i++){  
+for($j=1;$j<=$i;$j++){  
+echo "* ";  
+}  
+echo "<br>";  
+}  
+?>  
+
+Ans-7
+<?php
+    $size = 4;
+    
+    // upside pyramid
+    for ($i = 1; $i <= $size; $i++) {
+        // printing spaces
+        for ($j = $size; $j > $i; $j--) {
+            echo "&nbsp;&nbsp;";
+        }
+        // printing star
+        for ($k = 0; $k < $i * 2 - 1; $k++) {
+            echo "*";
+        }
+        echo "<br>";
+    }
+    // downside pyramid
+    for ($i = 1; $i <= $size - 1; $i++) {
+        // printing spaces
+        for ($j = 0; $j < $i; $j++) {
+            echo "&nbsp;&nbsp;";
+        }
+        // printing star
+        for ($k = ($size - $i) * 2 - 1; $k > 0; $k--) {
+            echo "*";
+        }
+        echo "<br>";
+    }
+?>
+
+Ans-8
+<?php
+for($i=1; $i<=4; $i++)
+{
+ for($j=$i; $j>=1; $j--)
+  echo $j % 2;
+ echo "<br>";
+}
+?>
